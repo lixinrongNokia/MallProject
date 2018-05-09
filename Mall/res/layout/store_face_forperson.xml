@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:pile="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.stone.pile.libs.PileLayout
+                android:id="@+id/pileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                pile:displayCount="1.8"
+                pile:interval="10dp"
+                pile:scaleStep="0.32"
+                pile:sizeRatio="1.12"/>
+        <LinearLayout
+                android:layout_margin="@dimen/activity_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/storePhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/text_size_18"/>
+            <TextView
+                    android:id="@+id/storeAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/card_text"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textSize="@dimen/text_size_18"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="好评度"
+                  android:layout_margin="@dimen/aliwx_setting_item_margin_top"/>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:rating="2.5"
+                    android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="2.5"
+                    android:textSize="@dimen/ratingBarSize"/>
+        </RelativeLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="经营品牌"
+                  android:layout_margin="@dimen/aliwx_setting_item_margin_top"/>
+        <iliker.mall.XCFlowLayout
+                android:id="@+id/brands"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/goddess_height"
+                android:layout_margin="8dp">
+        </iliker.mall.XCFlowLayout>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/promotion"
+                  android:layout_margin="@dimen/aliwx_setting_item_margin_top"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:ellipsize="marquee"
+                  android:singleLine="true"
+                  android:focusable="true"
+                  android:marqueeRepeatLimit="marquee_forever"
+                  android:focusableInTouchMode="true"
+                  android:scrollHorizontally="true"
+                  android:text="本店促销:买500送优惠券100，不限量，人人有份！促销时间2017-8至2017-10"/>
+    </LinearLayout>
+</ScrollView>

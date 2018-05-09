@@ -1,0 +1,63 @@
+<!-- 购物车页面不为空时布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_shopcart_full"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/cartlogo"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#BC03B1">
+
+        <Button
+            android:id="@+id/totalCbx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@null"
+            android:text="反选"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/cart_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:text="编辑"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <!-- 引入底部结算栏 -->
+
+    <include
+        android:id="@+id/cartListFooter"
+        layout="@layout/bbar_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:id="@+id/shopcart_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cartListFooter"
+        android:layout_below="@id/cartlogo"
+        android:dividerHeight="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 商品详情的的每个介绍,加的边框样式、有圆角的 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 描边 -->
+    <stroke
+        android:width="2dp"
+        android:color="#dcdcdc" />
+    <!-- 圆角 -->
+    <corners android:radius="5dp" />
+    
+    <!-- 背景色,白色 -->
+    <solid android:color="#ffffff"/>
+
+</shape>

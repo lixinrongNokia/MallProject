@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/transparent">
+
+        <TextView
+                android:id="@+id/action_Desc"
+                android:layout_margin="5dp"
+                android:background="@drawable/product_item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提升排名"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        <TextView
+                android:id="@+id/actionSeting"
+                android:layout_margin="5dp"
+                android:background="@drawable/product_item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="活动设置"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+        <TextView
+                android:id="@+id/close"
+                android:background="@drawable/product_item_bg"
+                android:layout_marginTop="5dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:gravity="center"/>
+</LinearLayout>

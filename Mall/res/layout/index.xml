@@ -1,0 +1,191 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <include
+                android:id="@+id/title"
+                layout="@layout/index_title"/>
+
+        <fragment
+                android:id="@+id/CycleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="180dip"
+                class="com.cardsui.example.CycleViewPager"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/try_"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/try_"
+                    android:gravity="center"
+                    android:text="新品尝鲜"/>
+
+            <TextView
+                    android:id="@+id/free"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/free"
+                    android:gravity="center"
+                    android:text="限时抢购"/>
+
+            <TextView
+                    android:id="@+id/bargaining"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/bargaining"
+                    android:gravity="center"
+                    android:text="门店"/>
+
+            <TextView
+                    android:id="@+id/classify_index"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/classify_index"
+                    android:gravity="center"
+                    android:text="商品分类"/>
+
+        </LinearLayout>
+
+        <fragment
+                android:id="@+id/fragment_cycle_viewpager_content2"
+                class="com.cardsui.example.CycleViewPager2"
+                android:layout_width="match_parent"
+                android:layout_height="180dip"
+                android:layout_marginTop="8dp"
+                tools:layout="@layout/view_cycle_viewpager_contet"/>
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/description"
+                android:src="@drawable/limit_act"/>
+
+        <fragment
+                android:id="@+id/fragment_cycle_viewpager_content3"
+                class="com.cardsui.example.CycleViewPager3"
+                android:layout_width="match_parent"
+                android:layout_height="180dip"
+                android:layout_marginTop="8dp"
+                tools:layout="@layout/view_cycle_viewpager_contet"/>
+
+        <RelativeLayout
+                android:id="@+id/anchor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="新品"
+                    android:textColor="@color/myblack"/>
+
+            <TextView
+                    android:id="@+id/newsalemore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_find_arrowhead"
+                    android:drawableRight="@drawable/ic_find_arrowhead"
+                    android:gravity="center"
+                    android:text="查看更多" android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <FrameLayout
+                android:id="@+id/NewProductFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"/>
+
+        <RelativeLayout
+                android:id="@+id/anchor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+            <TextView
+                    android:id="@+id/timetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="限时特惠"
+                    android:textColor="@color/defaultRed"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableEnd="@drawable/ic_find_arrowhead"
+                    android:drawableRight="@drawable/ic_find_arrowhead"
+                    android:gravity="center"
+                    android:text="查看更多"/>
+            <countdowntimer.CountDownTimerView
+                    android:id="@+id/countdowntimerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/timetext"
+                    android:layout_toEndOf="@+id/timetext"/>
+        </RelativeLayout>
+
+        <fragment
+                android:id="@+id/TimelimitFragment"
+                class="com.cardsui.example.goods.TimelimitFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/timelimit"/>
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/description"
+                android:src="@drawable/limit_act"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="预付卡"
+                android:textColor="@color/myblack"/>
+
+        <fragment
+                android:id="@+id/fragment_cycle_viewpager_content4"
+                class="com.cardsui.example.CycleViewPager4"
+                android:layout_width="match_parent"
+                android:layout_height="180dip"
+                android:layout_marginBottom="@dimen/text_size_9"
+                android:layout_marginTop="8dp"
+                tools:layout="@layout/view_cycle_viewpager_contet"/>
+
+    </LinearLayout>
+
+</ScrollView>

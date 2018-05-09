@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<resources>
+    <!-- Messages IDs -->
+    <item name="auto_focus" type="id" />
+    <item name="decode" type="id" />
+    <item name="decode_failed" type="id" />
+    <item name="decode_succeeded" type="id" />
+    <item name="encode_failed" type="id" />
+    <item name="encode_succeeded" type="id" />
+    <item name="launch_product_query" type="id" />
+    <item name="quit" type="id" />
+    <item name="restart_preview" type="id" />
+    <item name="return_scan_result" type="id" />
+    <item name="search_book_contents_failed" type="id" />
+    <item name="search_book_contents_succeeded" type="id" />
+    <item name="gridview" type="id" />
+    <item name="webview" type="id" />
+    <item name="about_version_code" type="id">false</item>
+    <item name="split" type="id">false</item>
+
+    <!--库存-->
+    <item name="configName" type="id">false</item>
+    <item name="configColor" type="id">false</item>
+    <item name="configSize" type="id">false</item>
+    <item name="addTitle" type="id">false</item>
+    <item name="returnB" type="id">false</item>
+    <item name="itemType" type="id">false</item>
+    <item name="addText" type="id">false</item>
+    <item name="stockSave" type="id">false</item>
+    <item name="editTitle" type="id">false</item>
+    <item name="listView" type="id">false</item>
+    <item name="delete" type="id">false</item>
+    <item name="moduleTitle" type="id">false</item>
+    <item name="edit" type="id">false</item>
+    <item name="moduleColTitle" type="id">false</item>
+    <item name="add" type="id">false</item>
+    <item name="rowText" type="id">false</item>
+    <item name="delCb" type="id">false</item>
+    <item name="brandS" type="id">false</item>
+    <item name="nameS" type="id">false</item>
+    <item name="colorS" type="id">false</item>
+    <item name="sizeS" type="id">false</item>
+    <item name="typeS" type="id">false</item>
+    <item name="countEt" type="id">false</item>
+    <item name="logtype" type="id">false</item>
+    <item name="countI" type="id">false</item>
+    <item name="logtime" type="id">false</item>
+    <item name="totleI" type="id">false</item>
+    <item name="totalT" type="id">false</item>
+    <item name="addB" type="id">false</item>
+    <item name="configB" type="id">false</item>
+    <item name="artNameText" type="id">false</item>
+    <item name="artColorText" type="id">false</item>
+    <item name="artSizeText" type="id">false</item>
+    <item name="look_row_col1" type="id">false</item>
+    <item name="look_row_col2" type="id">false</item>
+    <item name="look_row_col3" type="id">false</item>
+</resources>

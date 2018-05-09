@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="180dp"
+    android:background="@color/orderlv"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/defbg"
+        android:gravity="center"
+        android:text="特别提醒!"
+        android:textColor="@color/smokeGray" />
+
+    <TextView
+        android:id="@+id/prompttext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="你身边有其他男人在吗?孩子们在房间里吗?\n温情提醒,下面的页面将包含乳房的插图!"
+        android:textColor="@color/myblack" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button"
+            android:text="退出"
+            android:textColor="@color/orderlv" />
+
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@id/cancel"
+            android:layout_toRightOf="@id/cancel"
+            android:background="@drawable/button"
+            android:text="继续"
+            android:textColor="@color/orderlv" />
+    </RelativeLayout>
+
+</LinearLayout>

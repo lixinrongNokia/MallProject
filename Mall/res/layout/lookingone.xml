@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/cartlogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stroke"
+            tools:ignore="UselessParent">
+
+        <TextView
+                android:id="@+id/abouttitlet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="第一步"
+                android:textSize="18sp"/>
+
+        <ImageView
+                android:id="@+id/closebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/close_btn"
+                tools:ignore="ContentDescription"/>
+    </RelativeLayout>
+
+    <EditText
+            android:id="@+id/regcheck"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="已验证手机号"
+            android:inputType="phone"
+            android:maxLength="11"/>
+
+    <Button
+            android:id="@+id/regbtn"
+            style="@style/defaultbutton"
+            android:text="下一步"/>
+
+</LinearLayout>

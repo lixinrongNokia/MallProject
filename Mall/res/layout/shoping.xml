@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/paymenting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/diafu"
+        android:gravity="center"
+        android:text="待付款" />
+
+    <TextView
+        android:id="@+id/takegoods"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/dai"
+        android:gravity="center"
+        android:text="待收货" />
+
+    <TextView
+        android:id="@+id/querylogistics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/wuliu"
+        android:gravity="center"
+        android:text="查物流" />
+
+    <TextView
+        android:id="@+id/coupons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/dianquan"
+        android:gravity="center"
+        android:text="优惠券" />
+
+</LinearLayout>

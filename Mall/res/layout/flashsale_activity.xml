@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/tbr"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/description"
+            android:scaleType="centerInside"
+            android:src="@drawable/find_titletext" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        style="@style/bbar_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/checkflashsale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="抢购"
+            android:textColor="@drawable/flashbtn"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/checkremind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我的提醒"
+            android:textColor="@drawable/flashbtn"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/flashcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radiogroup"
+        android:layout_below="@id/title" />
+
+</RelativeLayout>

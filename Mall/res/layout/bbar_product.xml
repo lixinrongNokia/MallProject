@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_detail_bottombar"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/sharebtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:src="@drawable/product_detail_new_share"
+        android:background="@null"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/collectionbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:background="@null"
+        android:src="@drawable/product_detail_new_collect"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/add_shop_cart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/coo_camera_bg_n"
+        android:text="@string/add_cart"
+        android:textColor="@color/defaultWhite"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/pd_car"
+        android:paddingBottom="10dip">
+
+        <TextView
+            android:id="@+id/cart_icon_num"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginStart="15dip"
+            android:background="@drawable/my_message_box_photo_number_more"
+            android:gravity="center"
+            android:textColor="@color/defaultWhite"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

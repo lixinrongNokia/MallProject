@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <EditText android:id="@+id/login_pwd" android:inputType="textPassword" android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:hint="输入登陆密码"/>
+    <EditText android:id="@+id/pay_code" android:inputType="textPassword" android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:hint="设置支付密码6-16位"/>
+    <Button android:id="@+id/setting" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="设置"/>
+</LinearLayout>

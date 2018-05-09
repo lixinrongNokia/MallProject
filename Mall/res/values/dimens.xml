@@ -1,0 +1,42 @@
+<resources>
+    <dimen name="actionBarSize">32dip</dimen>
+    <dimen name="activity_margin">3dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+    <dimen name="color_circle_size">50dp</dimen>
+    <dimen name="card_small_text">14.0sp</dimen>
+    <dimen name="defaulttextsize">18.0sp</dimen>
+    <dimen name="ratingBarSize">40.0sp</dimen>
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+    <dimen name="mytextviewsize">48dp</dimen>
+    <dimen name="bubble_layout_margin_vertical">10dip</dimen>
+    <dimen name="bubble_name_layout_margin_bottom">5dip</dimen>
+    <!-- 超大标题字号 -->
+    <dimen name="font_Twenty">20sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_9">9sp</dimen>
+    <dimen name="order_status">32sp</dimen>
+
+    <dimen name="android_spaces">8dp</dimen>
+
+    <dimen name="prepaidcardheight">180dp</dimen>
+    <dimen name="share_radius">4dip</dimen>
+    <dimen name="goddess_height">36dip</dimen>
+    <dimen name="max_bubble_heith">160dip</dimen>
+    <dimen name="goodspdquery_heith">320dip</dimen>
+    <dimen name="share_detail_heith">412dip</dimen>
+    <dimen name="max_bubble_width">240dip</dimen>
+    <dimen name="message_music_size">60dip</dimen>
+    <dimen name="praises_size">72dip</dimen>
+    <dimen name="screen_width">90dip</dimen>
+    <dimen name="screen_heith">150dip</dimen>
+    <dimen name="good_width">96dip</dimen>
+    <dimen name="good_heith">112dip</dimen>
+    <!--库存-->
+    <dimen name="text_size">20.0dip</dimen>
+    <dimen name="header_height">80.0dip</dimen>
+    <dimen name="row_height">40.0dip</dimen>
+
+</resources>

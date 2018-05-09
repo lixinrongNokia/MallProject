@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl_headview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15.0dip"
+        android:paddingEnd="24.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="24.0dip"
+        android:paddingStart="20.0dip"
+        android:paddingTop="15.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/list_title_to"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_namelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff8e8e8e"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <iliker.fragment.type.NoScrollGridView
+        android:id="@+id/listview_item_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff4f4f4"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="10dp"
+        android:listSelector="#ffe2e2e2"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

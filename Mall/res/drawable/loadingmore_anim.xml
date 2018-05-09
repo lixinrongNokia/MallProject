@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false" android:tileMode="disabled"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="85" android:drawable="@drawable/pultorefresh_press_1" />
+    <item android:duration="85" android:drawable="@drawable/pultorefresh_press_2" />
+    <item android:duration="85" android:drawable="@drawable/pultorefresh_press_3" />
+    <item android:duration="85" android:drawable="@drawable/pultorefresh_press_4" />
+    <item android:duration="85" android:drawable="@drawable/pultorefresh_press_5" />
+    <item android:duration="85" android:drawable="@drawable/pultorefresh_press_6" />
+    <item android:duration="85" android:drawable="@drawable/pultorefresh_press_7" />
+    <item android:duration="85" android:drawable="@drawable/pultorefresh_press_8" />
+</animation-list>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/headimg2"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_public_mr_headpicture"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:id="@+id/coll"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/nickname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/cell_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nickname2"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bofan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btnbg_commentaudio_normal"
+            android:textSize="@dimen/card_small_text" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fabutime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

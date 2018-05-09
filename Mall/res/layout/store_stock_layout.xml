@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView android:textSize="@dimen/text_size"
+              android:gravity="center"
+              android:id="@+id/goodsCode"
+              android:background="@color/table_row"
+              android:layout_width="225.0dip"
+              android:layout_height="fill_parent"
+              android:layout_marginRight="1.0dip"/>
+    <TextView android:textSize="@dimen/text_size"
+              android:gravity="center"
+              android:id="@+id/color"
+              android:background="@color/table_row"
+              android:layout_width="75.0dip"
+              android:layout_height="fill_parent"
+              android:layout_marginRight="1.0dip"/>
+    <TextView android:id="@+id/stockCount"
+              android:background="@color/table_row"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:textSize="@dimen/text_size"
+              android:gravity="center"/>
+</LinearLayout>

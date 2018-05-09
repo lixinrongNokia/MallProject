@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/msgList"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/defaultWhite">
+
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/android_spaces"
+                android:text="订单已确认"
+                android:textColor="@color/defaultBlack"
+                android:textSize="@dimen/order_status" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orderStatus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/android_spaces"
+                android:text="你的订单已确认，系统审核后会处理"
+                android:textColor="@color/defaultGray"
+                android:textSize="@dimen/text_size_18" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/goodsLv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:dividerHeight="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/clearing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_padding"
+                android:layout_marginStart="@dimen/view_padding"
+                android:text="结算方式:" />
+
+            <TextView
+                android:id="@+id/clearingType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/clearing"
+                android:layout_toRightOf="@id/clearing"
+                android:text="补货" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/view_padding"
+                android:layout_marginRight="@dimen/view_padding"
+                android:gravity="right"
+                android:text="￥522" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

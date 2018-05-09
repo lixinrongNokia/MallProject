@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="cn.iliker.mall"
+          android:versionCode="58"
+          android:versionName="1.5.8">
+
+    <uses-sdk
+            android:minSdkVersion="15"
+            android:targetSdkVersion="24"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- 阿里移动推送相关权限 -->
+    <!-- 选举使用，当应用有删除或者更新时需要重新选举，复用推送通道 -->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <!-- 允许task重排序 -->
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+
+    <!-- 云推送小米通道相关权限 -->
+    <permission
+            android:name="cn.iliker.mall.permission.MIPUSH_RECEIVE"
+            android:protectionLevel="signatureOrSystem"/>
+
+    <uses-permission android:name="cn.iliker.mall.permission.MIPUSH_RECEIVE"/>
+
+    <supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="true"
+            android:smallScreens="true"/>
+
+    <application
+            android:name="com.iliker.application.CustomApplication"
+            android:allowBackup="false"
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            tools:replace="android:label,android:icon,android:allowBackup,android:name">
+
+        <!-- 百度地图定位正式签名 LWesYa56ukBQ6IYvTrlBPrN6 -->
+        <!-- 百度地图定位测试签名 iSc2VmZG3XkEDZwG3I5swrOOktTnQin7 -->
+        <meta-data
+                android:name="com.baidu.lbsapi.API_KEY"
+                android:value="LWesYa56ukBQ6IYvTrlBPrN6"/>
+        <meta-data
+                android:name="Mob-AppKey"
+                android:value="1e77534358d00"/>
+        <meta-data
+                android:name="Mob-AppSecret"
+                android:value="ecbfb7e6740bff4234a1116faa9a1e1b"/>
+
+        <service
+                android:name="com.baidu.location.f"
+                android:enabled="true"
+                android:process=":remote"/>
+
+        <activity
+                android:name="iliker.mall.StartActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:host="iliker.cn"
+                        android:path="/download.html"
+                        android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="iliker.mall.LoginActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name=".storemodule.StoreGoodsList"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="com.cardsui.example.Mall_Activity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".storemodule.StockDetailsActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"/>
+        <activity
+                android:name=".storemodule.StoreDetail"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"/>
+        <activity
+                android:name="com.cardsui.example.BNGuideActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"/>
+        <activity
+                android:name="me.iwf.photopicker.PhotoPickerActivity"
+                android:theme="@style/customTheme"/>
+        <activity
+                android:name="me.iwf.photopicker.PhotoPagerActivity"
+                android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+                android:name=".storemodule.Store_MainActivity"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"/>
+        <activity
+                android:name=".storemodule.ViewUnPackOrderActivity"
+                android:label="@string/orderDetails"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"/>
+        <activity
+                android:name="iliker.fragment.finding.RewardListActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.cardsui.example.goods.NewProductActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.finding.LoadThemeActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.StoreLoginActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"
+                android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity
+                android:name="iliker.fragment.person.IMListActivity"
+                android:label="消息列表"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.Light"/>
+        <activity
+                android:name="org.xing.qr_code.scan.MipcaActivityCapture"
+                android:label="@string/qrcode"
+                android:screenOrientation="portrait"
+                android:theme="@style/ActionBarTheme"/>
+        <activity
+                android:name=".storemodule.UpInStoresActivity"
+                android:label="@string/upInStoreGoods"
+                android:parentActivityName=".storemodule.Store_MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"
+                tools:ignore="UnusedAttribute"/>
+        <activity
+                android:name="iliker.mall.SelectSexActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name=".storemodule.StoreAccountAct"
+                android:label="@string/storeAccount"
+                android:parentActivityName=".storemodule.Store_MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"
+                tools:ignore="UnusedAttribute"/>
+        <activity
+                android:name=".MessagePanelAtc"
+                android:label="@string/aliPushMsg"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"
+                tools:ignore="UnusedAttribute"/>
+        <activity
+                android:name="iliker.mall.UnPackConfirmAcitivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name=".storemodule.UnPackOrderActivity"
+                android:label="@string/orders"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"
+                tools:ignore="UnusedAttribute">
+            <intent-filter>
+                <action android:name="cn.iliker.mall.storemodule.UnPackOrderActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="iliker.fragment.person.CouponsActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="iliker.mall.depth.DepthActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="com.cardsui.example.goods.FlashSaleActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="iliker.fragment.type.AddressListActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="iliker.mall.BindWXUserActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="iliker.fragment.mystore.BookKeepActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.cardsui.example.PrepaidcardActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.RegisterActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.LookingOneActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="iliker.mall.LookingTwoActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="iliker.mall.LookingThreeActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="iliker.mall.MyCollActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="iliker.fragment.home.LinkActivity"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.type.ShowGoodsActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.depth.MatchProductActivity"
+                android:label="专家推荐的产品"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.Light"/>
+        <activity
+                android:name="iliker.mall.depth.Result_Activity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.person.activity.CancellOrderDetail"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.person.activity.PayingOrderDetail"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.finding.BatchTailorImgActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/ActionBarTheme"/>
+        <activity
+                android:name="iliker.fragment.person.activity.ForGoodActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.person.activity.ConfirmOrderAct"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.MainActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.drawer"
+                android:windowSoftInputMode="adjustPan"/>
+        <activity
+                android:name="iliker.fragment.finding.SelectImgActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.finding.OutShowPersonAlity"
+                android:screenOrientation="portrait"
+                android:theme="@style/showpersonTheme"/>
+        <activity
+                android:name="iliker.fragment.finding.GoddessListActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+        <activity
+                android:name="iliker.fragment.finding.InShowPersonAlity"
+                android:screenOrientation="portrait"
+                android:theme="@style/showpersonTheme"/>
+        <activity
+                android:name="iliker.fragment.type.ShopListActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.person.AllOrderActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.PageIndicatorDefaults">
+            <intent-filter>
+                <action android:name="iliker.fragment.person.AllOrderActivity"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="iliker.mall.FeedbackActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.mystore.AccountActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.type.PayTypeActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.type.NewAddressActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.home.BodyTestActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.GuideActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.SurveyActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Transparent"/>
+        <activity
+                android:name="iliker.fragment.person.PersonSpace"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.mystore.RechargeableActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.finding.PraiseListActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.LoadMap"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.jikexueyuan.tulingdemo.OnServcieActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.mystore.IncomeDetailsActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.CartActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.TestVersionUpdateActivity2"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.faxian.ShareDetailsActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.faxian.ImageActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.person.SettingFaceCode"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.FaceLoginActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.TestVersionUpdateActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.type.ProductDetailActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.type.SearchResult_Activity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.type.GoodsPDIMGActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.mall.AboutActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.type.DetailPicActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.home.ReportActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.type.CheckStandActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.cardsui.example.BargainingActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.mystore.AnalysisActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.mystore.Question_Center"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.finding.RewardActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".storemodule.StockManagerAct"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"/>
+        <activity
+                android:name=".storemodule.AddStockAct"
+                android:screenOrientation="portrait"
+                android:theme="@style/StoreTheme"/>
+
+        <service android:name="iliker.service.VersionService"/>
+        <service android:name="iliker.service.AutoUpdateSvc"/>
+
+        <!-- 支付宝接入声明 -->
+        <activity
+                android:name="com.alipay.sdk.app.H5PayActivity"
+                android:configChanges="orientation|keyboardHidden|navigation"
+                android:exported="false"
+                android:screenOrientation="behind"/>
+        <activity
+                android:name="com.alipay.sdk.auth.AuthActivity"
+                android:configChanges="orientation|keyboardHidden|navigation"
+                android:exported="false"
+                android:screenOrientation="behind"/>
+        <!-- 支付宝接入声明 -->
+        <activity
+                android:name="iliker.mall.CompleteActivity"
+                android:screenOrientation="portrait"/>
+        <activity android:name="iliker.fragment.finding.OldPhotoActivity"/>
+        <activity
+                android:name="iliker.fragment.mystore.PromoteActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.person.HistoryActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.mystore.PartnersActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.cardsui.example.goods.ClassificationActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/ActionBarTheme"/>
+        <activity
+                android:name="iliker.fragment.mystore.TransferActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.finding.OldtimeActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.finding.FollowersActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.mystore.RecommendedActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="iliker.fragment.type.SearchActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"/>
+        <!-- 分享相关 -->
+        <activity
+                android:name="com.mob.tools.MobUIShell"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--
+            <intent-filter>
+                <data android:scheme="tencent100371282"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            -->
+
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="iliker.service.PostLactionSvc"/>
+        <!-- 微信分享回调 -->
+        <activity
+                android:name=".wxapi.WXEntryActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="true"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+                android:name=".wxapi.WXPayEntryActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="true"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+                android:name="iliker.fragment.person.activity.RefundActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="true"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service
+                android:name="iliker.service.LocationSvc"
+                tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="getStore.service"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="IFLYTEK_APPKEY_AD"
+                android:value="&apos;563c65b5&apos;"/>
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="8115000"/>
+        <!-- 闹钟服务 -->
+        <receiver android:name="com.cardsui.example.goods.clock.CallAlarm"/>
+
+        <activity
+                android:name="com.cardsui.example.goods.clock.AlarmAlert"
+                android:label="@string/app_name"
+                android:theme="@style/Theme.AlterActivity"/>
+
+        <!-- 阿里推送相关 -->
+        <meta-data
+                android:name="com.alibaba.app.appkey"
+                android:value="23542620"/> <!-- 请填写你自己的- appKey -->
+        <meta-data
+                android:name="com.alibaba.app.appsecret"
+                android:value="a257838f54ecce40c6a252be708b3ca3"/> <!-- 请填写你自己的appSecret -->
+
+
+        <!-- 通道保持服务（幽灵进程自动保活该服务） -->
+        <service
+                android:name="com.alibaba.sdk.android.push.ChannelService"
+                android:exported="true"
+                android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4"/>
+
+                <category android:name="taobao"/>
+            </intent-filter>
+        </service>
+
+        <!-- 消息接收服务 -->
+        <service
+                android:name="com.alibaba.sdk.android.push.MsgService"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+
+        <!-- 消息接收增强服务（可提高消息/通知到达率） -->
+        <service
+                android:name="com.alibaba.sdk.android.push.channel.TaobaoRecvService"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
+            </intent-filter>
+        </service>
+
+        <!-- 消息接收监听器 （用户可自主扩展） -->
+        <receiver
+                android:name=".alipush.MyMessageReceiver"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.taobao.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <!-- accs end -->
+
+
+        <!-- &lt;!&ndash;小米通道官方配置&ndash;&gt; -->
+        <service
+                android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+                android:enabled="true"
+                android:exported="true"/>
+        <service
+                android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+                android:enabled="true"/>
+
+        <receiver
+                android:name="com.alibaba.sdk.android.push.MiPushBroadcastReceiver"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+                android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <!-- 阿里推送相关结束 -->
+        <provider
+                android:name=".PushMsgProvider"
+                android:authorities="cn.iliker.mall.aliPushMsg"/>
+
+    </application>
+
+</manifest>

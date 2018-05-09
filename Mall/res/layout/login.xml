@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true">
+
+    <RelativeLayout
+            android:id="@+id/cartlogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/stroke"
+            tools:ignore="UselessParent">
+
+        <TextView
+                android:id="@+id/abouttitlet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="用户登录"
+                android:textSize="18sp"/>
+
+        <ImageView
+                android:id="@+id/closebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/close_btn"
+                tools:ignore="ContentDescription"/>
+    </RelativeLayout>
+
+    <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="手机号/昵称"
+            android:inputType="textPersonName"/>
+
+    <EditText
+            android:id="@+id/logpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="登陆密码"
+            android:inputType="textPassword"/>
+
+    <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:enabled="false"
+            android:text="爱内秀登陆"
+            android:textColor="#88000000"
+            android:textSize="18sp"/>
+
+    <Button
+            android:id="@+id/facelogin"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:background="#00ff00"
+            android:text="人脸登陆"
+            android:textColor="#88000000"
+            android:textSize="18sp"/>
+    <ImageButton
+            android:id="@+id/wx_account_login"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/icon_wx_button"
+            android:background="@null"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="快速注册"/>
+
+        <TextView
+                android:id="@+id/looking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:text="找回密码"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/store_login_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="门店登陆"/>
+</LinearLayout>

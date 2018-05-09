@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <Button
+            android:id="@+id/tbar"
+            style="@style/defaultbutton"
+            android:layout_alignParentBottom="true"
+            android:text="马上加入"/>
+
+    <ScrollView
+            android:layout_above="@id/tbar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="5dp"
+                      android:text="条件"
+                      android:textSize="24sp"/>
+            <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/defaultWhite">
+
+                <TextView
+                        android:id="@+id/conditions"
+                        android:layout_margin="8dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"/>
+            </FrameLayout>
+
+            <TextView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="5dp"
+                      android:text="收益"
+                      android:textSize="24sp"/>
+            <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/defaultWhite">
+
+                <TextView
+                        android:id="@+id/earnings"
+                        android:layout_margin="8dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"/>
+            </FrameLayout><TextView android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="推广攻略"
+                                    android:textSize="24sp"/>
+            <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/defaultWhite">
+
+                <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="直接邀请或二维码分享出去"
+                        android:textSize="18sp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

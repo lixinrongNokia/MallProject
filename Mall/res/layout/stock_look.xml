@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_alignParentTop="true"
+             android:background="@color/backgrund">
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/midground">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header_height"
+                android:gravity="center"
+                android:text="@string/stockview"
+                android:textSize="@dimen/text_size"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/row_height"
+                android:layout_marginBottom="1.0dip"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="225.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@color/table_col"
+                    android:gravity="center"
+                    android:text="@string/look_main_table_col1_title"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/text_size"/>
+
+            <TextView
+                    android:layout_width="75.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@color/table_col"
+                    android:gravity="center"
+                    android:text="@string/look_name_table_col1_title"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/text_size"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@color/table_col"
+                    android:gravity="center"
+                    android:text="库存"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/text_size"/>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+        <ListView
+                android:id="@id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="#00000000"
+                android:dividerHeight="18dp"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/midground">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64.0dip"
+                android:layout_alignParentBottom="true">
+
+            <!--<ImageView
+                android:id="@id/addB"
+                android:layout_width="45.0dip"
+                android:layout_height="45.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.0dip"
+                android:src="@drawable/add_write" />-->
+            <ImageView
+
+                    android:id="@id/addB"
+                    android:layout_width="45.0dip"
+                    android:layout_height="45.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/add_write"/>
+            <!--<ImageView
+                android:id="@id/configB"
+                android:layout_width="45.0dip"
+                android:layout_height="45.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/config" />-->
+        </RelativeLayout>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/viewMessage"
+            android:title="@string/aliPushMsg"
+            app:showAsAction="ifRoom"
+            app:actionProviderClass="cn.iliker.mall.storemodule.BadgeActionProvider"
+            android:icon="@android:drawable/sym_action_email"
+            tools:ignore="AppCompatResource"/>
+    <item
+            android:id="@+id/qrCode"
+            android:title="@string/qrcode"
+            app:showAsAction="ifRoom"
+            tools:ignore="AppCompatResource"/>
+    <item
+            android:id="@+id/switchGUI"
+            android:title="@string/switchGUI"
+            app:showAsAction="withText"
+            tools:ignore="AppCompatResource"/>
+    <item
+            android:id="@+id/storeLogout"
+            android:title="@string/storeLogout"
+            app:showAsAction="withText"
+            tools:ignore="AppCompatResource"/>
+</menu>

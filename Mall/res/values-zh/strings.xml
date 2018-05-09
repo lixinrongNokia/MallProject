@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">爱内秀</string>
+    <string name="qrcode" translatable="false">二维码扫描</string>
+    <string name="app_id" translatable="false">5604b88b</string><!--讯飞人脸识别-->
+    <string name="openIMKey" translatable="false">23403396</string><!--阿里百川IM-->
+    <string name="offlinetext" translatable="false">登陆一下，与时尚同步！</string>
+    <string name="loginbtn" translatable="false">登陆</string>
+    <string name="add_cart" translatable="false">购买</string>
+    <string name="jd_price" translatable="false">爱内秀价 :</string>
+    <string name="product_info" translatable="false">商品信息</string>
+    <string name="product_select" translatable="false">已选</string>
+    <string name="product_service" translatable="false">服务</string>
+    <string name="product_services" translatable="false">官方原装正品,提供国家标准的售后服务</string>
+    <string name="realName" translatable="false">真实姓名</string>
+    <string name="amount" translatable="false">转账金额</string>
+    <string name="amount2" translatable="false">退款金额</string>
+    <string name="description" translatable="false">image</string>
+    <string name="resundTitle" translatable="false">申请退款</string>
+    <string name="info" translatable="false">
+        充值3000元，赠送1998元，实际到帐4998元\n
+        7月活动：额外赠送价值438元亲子套装(母女文胸各一套)\n
+        12月活动：额外赠送价值是588元家庭睡衣3套
+    </string>
+    <string name="share" translatable="false">分享</string>
+    <string name="xlistview_header_hint_normal" translatable="false">下拉刷新</string>
+    <string name="xlistview_header_hint_ready" translatable="false">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading" translatable="false">正在加载</string>
+    <string name="xlistview_header_last_time" translatable="false">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal" translatable="false">查看更多</string>
+    <string name="xlistview_footer_hint_ready" translatable="false">松开载入更多</string>
+
+    <string name="release_to_refresh" translatable="false">释放立即刷新</string>
+    <string name="refreshing" translatable="false">正在刷新</string>
+    <string name="refresh_succeed" translatable="false">刷新成功</string>
+    <string name="refresh_fail" translatable="false">刷新失败</string>
+    <string name="pullup_to_load" translatable="false">上拉加载更多</string>
+    <string name="release_to_load" translatable="false">释放立即加载</string>
+    <string name="loading" translatable="false">正在加载</string>
+    <string name="load_succeed" translatable="false">加载成功</string>
+    <string name="load_fail" translatable="false">加载失败</string>
+
+    <string name="cart_sum_price" translatable="false">总计 :</string>
+    <string name="GoodsDetail" translatable="false">商品详情</string>
+    <string name="guide_select_sex" translatable="false">请选择你的性别</string>
+    <string name="guide_recommend_book" translatable="false">根据你的性别为您推测专属的体型数据</string>
+    <string name="send" translatable="false">发送</string>
+
+    <string-array name="welcome_tips" translatable="false">
+        <item>你不联网是不能和我对话的</item>
+        <item>亲，内衣顾问在此等候多时了</item>
+        <item>亲，近来一切可好</item>
+        <item>亲，想死你了</item>
+        <item>欢迎归来，亲</item>
+        <item>我是小爱机器人，很高兴为您服务</item>
+    </string-array>
+    <string name="scan_text" translatable="false">将二维码放入框内, 即可自动扫描</string>
+
+    <!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_start" translatable="false">模式开始</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared" translatable="false">模式清除</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE]  -->
+    <string name="lockscreen_access_pattern_cell_added" translatable="false">细胞添加</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected" translatable="false">模式完成</string>
+    <string name="supertwitter" translatable="false" formatted="false">
+        定义：注册会员在商城金牌推客专区购买任一套产品或在商城累积消费满520元（活差动专区除外），即可成为金牌推客，购物享受高额佣金及相关奖励。\n
+        1）、获得销售返利：64%；20%；16%\n
+        您及您的团队按一、二、三级计算，每个级别在商城当月销售产品的总额的50%*佣金比率（金牌从一级到三级分别为：64%；20%；16%）=次月返利金额\n
+        2）、获得服务奖：1%\n
+        您及您的三级团队在商城的当月销售总额的50%*1%\n
+        3）、获得团队建设奖：10%；6%；3%
+    </string>
+    <string name="superearnings" translatable="false" formatted="false">
+        举例说明\n
+        如小A购满520元升级为金牌推客后，小A邀请20人成为金牌推客，这20人又邀请20人，以此类推，三级金牌推客总人数就是401人\n
+        如果小A是普通推客，而其推荐的朋友均为普通推客，如人均消费520元\n
+        他的收益是：\n
+        个人一级返佣：520x50%x64%=166.4元\n
+        推荐二级返佣：520x20x50%x20%=1040元；\n
+        推荐三级返佣：520x380x50%x16%=15808元；\n
+        小A成为金牌推客后的收益为：17014.4元*（100%+1%+3%）=17694.976元\n
+
+        如果小A的团队一级会员80人，团队800人；则\n
+        他的收益是：\n
+        个人一级返佣：520x50%x64%=166.4元\n
+        推荐二级返佣：520x80x50%x20%=4160元；\n
+        推荐三级返佣：520x719x50%x16%=29910.4元；\n
+        小A的总收益为：34236.8*（100%+1%+6%）=36633.376元\n
+
+        如果小A的团队一级会员150人，团队1500人；则\n
+        他的收益是：\n
+        个人一级返佣：520x50%x64%=166.4元\n
+        推荐二级返佣：520x150x50%x20%=7800元；\n
+        推荐三级返佣：520x1349x50%x16%=56118.4元；\n
+        小A的总收益为：64084.8*（100%+1%+10%）=71134.128元
+    </string>
+    <string name="twitterconditions" translatable="false" formatted="false">
+        定义：注册会员在商城任意消费1件商品（活动专区除外）， 即可成为推客,购物享受分销价。\n
+        推荐购物获得：返佣+紧缩三层推客（产品毛利）的50%作为提成基本金，按三级享受不同的佣金比率，即
+        获得销售返利：64%；20%；16%\n
+        计算方式：您及您的团队按一、二、三级计算，每个级别在商城当月销售产品的总额的50%*佣金比率（金牌从一级到三级分别为：64%；20%；16%）=次月返利金额
+    </string>
+    <string name="twitterearnings" translatable="false" formatted="false">举例说明\n
+        如果小A是普通推客，他的收益是包括：购物享受分销价，并且享受三级返佣。\n
+        如小A购满升级为推客后，小A邀请5人成为推客，这5人又邀请5人，以此类推，三级推客总人数就是31人\n
+        如果小A是普通推客，而其推荐的朋友均为普通推客，如人均消费500元
+        他的收益是：\n
+        个人一级返佣：500x50%x64%=160元\n
+        推荐二级返佣：500x5x50%x20%=250元；\n
+        推荐三级返佣：500x25x50%x16%=1000元；\n
+        小A成为推客后的收益为：1410元
+    </string>
+    <string name="pay_result_callback_msg" translatable="false" formatted="false">微信支付结果：%s</string>
+    <string name="storeName" translatable="false">门店名称(必须;长度16以内)</string>
+    <string name="contacts" translatable="false">店长姓名</string>
+    <string name="password" translatable="false">登陆密码</string>
+    <string name="provinces_city" translatable="false">xx省xx市</string>
+    <string name="cell" translatable="false">固话/手机</string>
+    <string name="email" translatable="false">登陆邮箱(必须)</string>
+    <string name="address" translatable="false">门店详细地址(必须)</string>
+    <string name="businessLicense" translatable="false">营业执照</string>
+    <string name="IDCard" translatable="false">身份证(正反面)</string>s
+    <string name="submit" translatable="false">注册</string>
+    <string name="evaluation" translatable="false">门店评价</string>
+    <string name="enter_name" translatable="false">请输入登陆邮箱</string>
+    <string name="enter_pwd" translatable="false">请输入密码</string>
+    <string name="btn_login" translatable="false">登陆</string>
+    <string name="tv_unremenber" translatable="false">忘记密码</string>
+    <string name="loginError" translatable="false">登录失败</string>
+    <string name="upInStoreGoods" translatable="false">自提商品</string>
+    <string name="cash_clearing" translatable="false">现金了结</string>
+    <string name="physical_clearing" translatable="false">给我发货</string>
+    <string name="storeAccount" translatable="false">门店账户</string>
+    <string name="aliPushMsg" translatable="false">系统消息</string>
+    <string name="switchGUI" translatable="false">切换终端</string>
+    <string name="checkUpdate" translatable="false">检查更新</string>
+    <string name="cleanCache" translatable="false">清除缓存</string>
+    <string name="orders" translatable="false">订单列表</string>
+    <string name="orderDetails" translatable="false">订单详情</string>
+    <string name="editor" translatable="false">[编辑]</string>
+</resources>

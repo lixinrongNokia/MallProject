@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Love diamond</string>
+    <string name="qrcode" translatable="false">Qr code scanning</string>
+    <string name="offlinetext">login</string>
+    <string name="share">share</string>
+    <string name="lockscreen_access_pattern_start" translatable="false">Pattern started</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared" translatable="false">Pattern cleared</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE]  -->
+    <string name="lockscreen_access_pattern_cell_added" translatable="false">Cell added</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected" translatable="false">Pattern completed</string>
+</resources>

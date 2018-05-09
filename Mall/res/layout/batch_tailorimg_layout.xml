@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pickerui="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/uploadPictureLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/allPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:padding="10dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+            <TextView
+                android:id="@+id/imgcount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="end"
+                android:text="0/16" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:maxEms="30"
+                android:hint="写点什么呢"
+                android:inputType="text"
+                android:maxLines="3" />
+
+            <LinearLayout
+                android:id="@+id/emotionalstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_promotion_coupon_collapse"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="情感状态"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/emotional"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="单身"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/professionalOP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_promotion_coupon_collapse"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="职业"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/job"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxEms="10"
+                    android:maxLines="1"
+                    android:text="计算机/IT"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hometownlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_promotion_coupon_collapse"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="家乡"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hometown"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxEms="10"
+                    android:maxLines="1"
+                    android:text="湖南"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.dpizarro.uipicker.library.picker.PickerUI
+        android:id="@+id/emotionalPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pickerui:autoDismiss="true"
+        pickerui:backgroundColor="#fff"
+        pickerui:blur="true"
+        pickerui:blur_downScaleFactor="@integer/blur_downscale_min"
+        pickerui:blur_radius="@integer/blur_radius_min"
+        pickerui:blur_use_renderscript="true"
+        pickerui:itemsClickables="true"
+        pickerui:textCenterColor="#000000"
+        pickerui:textNoCenterColor="#737373" />
+
+    <com.dpizarro.uipicker.library.picker.PickerUI
+        android:id="@+id/professionalPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pickerui:autoDismiss="true"
+        pickerui:backgroundColor="#fff"
+        pickerui:blur="true"
+        pickerui:blur_downScaleFactor="@integer/blur_downscale_min"
+        pickerui:blur_radius="@integer/blur_radius_min"
+        pickerui:blur_use_renderscript="true"
+        pickerui:itemsClickables="true"
+        pickerui:textCenterColor="#000000"
+        pickerui:textNoCenterColor="#737373" />
+</RelativeLayout>

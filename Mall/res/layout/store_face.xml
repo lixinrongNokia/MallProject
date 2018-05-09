@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/screen_heith"
+            android:padding="@dimen/activity_margin" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="门店图片" />
+
+        <HorizontalScrollView
+            android:id="@+id/detail_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/detail_screen_bg"
+            android:fillViewport="true"
+            android:padding="5dp"
+            android:scrollbars="none" />
+
+        <FrameLayout
+            android:id="@+id/detail_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/list_item_bg_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evaluation" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:rating="2.5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="2.5"
+                android:textSize="@dimen/ratingBarSize" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/myAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的账户" />
+
+        <Button
+            android:id="@+id/myOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的订单" />
+        <Button
+            android:id="@+id/myStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的库存" />
+    </LinearLayout>
+</ScrollView>

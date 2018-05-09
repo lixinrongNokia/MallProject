@@ -1,0 +1,1 @@
+include ':Pile',':Viewpagerindicator', ':PickerUI', ':OneSDK', ':YunWangVideoSDK', ':PhotoPicker', ':Mall'

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/regname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="(昵称)字母开头数字组合或纯中文"
+        android:inputType="text"
+        android:maxLength="10"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/regpwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="(密码)6-16位字母开头数字组合"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/confirmpwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="(确认密码一致)"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/sub"
+        style="@style/defaultbutton"
+        android:hint="完成" />
+
+</LinearLayout>

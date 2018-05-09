@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/defaultWhite">
+
+    <LinearLayout
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/boder"
+        android:orientation="vertical">
+
+        <com.kawa.widget.DrawHookView
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="支付成功"
+            android:textColor="@color/arc_blue" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/closebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="返回" />
+
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/online"
+    style="@style/onine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/userhead"
+            android:layout_width="@dimen/message_music_size"
+            android:layout_height="@dimen/message_music_size"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/avatar_def"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userhead"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="dddddd等等"
+            android:paddingTop="8dp" />
+
+        <ImageView
+            android:id="@+id/pushim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/liaotian" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/integralall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@color/dfrbg">
+
+            <TextView
+                android:id="@+id/fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="2"
+                android:text="我的积分"
+                android:textColor="@color/defaultWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/integrals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="@color/defaultWhite" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/coll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@color/dfrbg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="2"
+                android:text="收藏商品"
+                android:textColor="@color/defaultWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/defaultWhite" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/erweima" />
+    </LinearLayout>
+
+</LinearLayout>

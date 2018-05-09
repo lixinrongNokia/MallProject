@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 红色 选择城市那里 -->
+    <color name="font_pri_ok">#3498db</color>
+    <color  name="indicatorcolor">#FF0084FF</color>
+    <color name="select_city_red">#c53c3d</color>
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="logcolor">#ff0000</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="Grey">#BEBEBE</color>
+    <color name="defaultBlack">#000000</color>
+    <color name="orderttb">#E9EDF0</color>
+    <color name="orderlv">#EEF2F3</color>
+    <color name="smokeGray">#f5f5f5</color>
+    <color name="defaultRed">#ff0000</color>
+    <color name="defbg">#513919</color>
+    <color name="defaultWhite">#ffffff</color>
+    <color name="defaultGray">#696969</color>
+    <color name="myblack">#BC03B1</color>
+    <color name="stroke">#dddddd</color>
+    <color name="card_text">#ff8d8d8d</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="defaultwhite2">#F2F3F5</color>
+    <color name="Constrast_3">#ebeef1</color>
+    <color name="dfbg">#F2F3F3</color>
+    <color name="dfrbg">#D3A198</color>
+    <color name="yec">#FF821C</color>
+    <color name="mytextview">#50000000</color>
+    <color name="actionbar_bg">#FF0099CC</color>
+    <color name="defaultwhite3">#F2F3EE</color>
+    <color name="arc_blue">#10a679</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="detail_screen_bg">#adadad</color>
+    <color name="defaultGreen">#00ff00</color>
+    <color name="msgText">#666666</color>
+    <color name="msgList">#EEEEEC</color>
+
+    <!--库存-->
+    <color name="orange">#ffff8e1c</color>
+    <color name="green">#ff11bd6d</color>
+    <color name="backgrund">#ffe8f2ff</color>
+    <color name="midground">#3F51B5</color>
+    <color name="table_col">#ffc2c2c2</color>
+    <color name="table_row">#ffffffff</color>
+</resources>

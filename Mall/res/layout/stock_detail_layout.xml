@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+              android:layout_height="@dimen/row_height"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size" android:gravity="center" android:id="@+id/stockSize"
+              android:background="@color/table_row" android:layout_width="250.0dip" android:layout_height="fill_parent"
+              android:layout_marginRight="1.0dip"/>
+    <TextView android:textSize="@dimen/text_size" android:gravity="center" android:id="@+id/stockCount"
+              android:background="@color/table_row" android:layout_width="50.0dip" android:layout_height="fill_parent"
+              android:layout_marginRight="1.0dip"/>
+    <TextView android:id="@id/look_row_col3" android:background="@color/table_row" android:layout_width="fill_parent"
+              android:layout_height="fill_parent"/>
+</LinearLayout>

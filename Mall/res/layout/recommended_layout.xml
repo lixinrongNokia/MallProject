@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/onling_bg">
+        <TextView
+                android:id="@+id/accountnum"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/storelogo"
+                android:drawablePadding="2dp"
+                android:textColor="@color/defaultWhite"
+        />
+        <TextView
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/exchange"
+                android:drawablePadding="22dp"
+                android:textColor="@color/defaultWhite"
+                android:text="你的推荐人是"
+        />
+        <TextView
+                android:id="@+id/superior"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/storelogo"
+                android:textColor="@color/defaultWhite"
+        />
+    </LinearLayout>
+
+    <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            </TabWidget>
+
+            <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                <ListView
+                        android:id="@+id/view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

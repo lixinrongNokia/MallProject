@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ziliao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_promotion_coupon_collapse">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/ziliao"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ziliao"
+            android:gravity="center"
+            android:text="个人资料" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_promotion_coupon_collapse">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/location"
+            android:gravity="center"
+            android:text="收货地址" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_promotion_coupon_collapse">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/store"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/store"
+            android:gravity="center"
+            android:text="附近门店" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/editpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_promotion_coupon_collapse">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/knock"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/knock"
+            android:gravity="center"
+            android:text="修改密码" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/customerservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_promotion_coupon_collapse">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:drawableLeft="@drawable/customerservice"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/customerservice"
+                android:gravity="center"
+                android:text="客服" />
+    </RelativeLayout>
+</LinearLayout>

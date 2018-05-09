@@ -1,0 +1,210 @@
+<!-- 商品详情页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/attrRoot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!-- 引入底部菜单栏 -->
+    <include
+            android:id="@+id/bbar_card_btn"
+            layout="@layout/bbar_product"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <!-- 主体部分 -->
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bbar_card_btn">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <com.fjl.widget.AutoScrollViewPager
+                        android:id="@+id/poster_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"/>
+
+                <LinearLayout
+                        android:id="@+id/points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:orientation="horizontal"/>
+
+                <ImageButton
+                        android:id="@+id/backbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mytestview"
+                        android:layout_gravity="start|top"
+                        android:src="@drawable/back_icon"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/more_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/defaultwhite3"
+                android:drawableLeft="@drawable/picmore"
+                android:drawablePadding="@dimen/view_padding"
+                android:drawableStart="@drawable/picmore"
+                android:gravity="center_vertical"
+                android:text="@string/view_more"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/jd_price"
+                        android:textSize="20sp"/>
+
+                <TextView
+                        android:id="@+id/product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="#ff0000"
+                        android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/android_layout_bg"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_item_bg"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:textColor="#696969"
+                        android:textSize="16sp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/product_info"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/product_detail_new_line"/>
+
+                    <TextView
+                            android:id="@+id/product_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_item_bg"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:textColor="#696969"
+                        android:textSize="16sp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/product_service"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/product_detail_new_line"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/product_services"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/product_item_bg"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:textColor="#696969"
+                        android:textSize="16sp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="可得积分:"/>
+
+                        <TextView
+                                android:id="@+id/integral"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="20"
+                                android:textColor="@color/myblack"/>
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/product_detail_new_line"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="说明:￥100=10积分"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/addpromote"
+            android:layout_width="@dimen/mytextviewsize"
+            android:layout_height="@dimen/mytextviewsize"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/mytestview"
+            android:text="金牌推广"
+            android:textColor="@color/defaultwhite2"/>
+</RelativeLayout>

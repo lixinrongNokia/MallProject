@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RadioGroup
+        android:id="@+id/fmgrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/fm1"
+            android:layout_width="320dp"
+            android:layout_height="180dp"
+            android:background="@drawable/fmdt1"
+            android:button="@null"
+            android:text="丰满型"
+            android:textColor="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/fm2"
+            android:layout_width="320dp"
+            android:layout_height="180dp"
+            android:background="@drawable/fmdt2"
+            android:button="@null"
+            android:text="半丰满型"
+            android:textColor="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/fm3"
+            android:layout_width="320dp"
+            android:layout_height="180dp"
+            android:background="@drawable/fmdt3"
+            android:button="@null"
+            android:text="松弛型"
+            android:textColor="@android:color/transparent" />
+
+        <RadioButton
+            android:id="@+id/fm4"
+            android:layout_width="320dp"
+            android:layout_height="180dp"
+            android:background="@drawable/fmdt4"
+            android:button="@null"
+            android:text="干瘪型"
+            android:textColor="@android:color/transparent" />
+    </RadioGroup>
+</ScrollView>

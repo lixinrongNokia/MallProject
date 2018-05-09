@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >  
+    <item android:state_pressed="true" >  
+        <shape >
+            <!-- solid 定义边框颜色 -->
+            <solid android:color="#ADFF2F"/>
+            <!-- corners 让矩形变成圆角矩形 -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>  
+    <item android:state_pressed="false" >  
+        <shape>
+            <!-- solid 定义边框颜色 -->
+            <solid android:color="#BC03B1"/>
+            <!-- corners 让矩形变成圆角矩形 -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>    
+</selector>

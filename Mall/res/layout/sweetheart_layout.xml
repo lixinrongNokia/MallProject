@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/description"
+        android:src="@drawable/hi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="感谢您填写了这份问卷调查。我们将以电子邮件形式向您发送您的检测结果及" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10％的优惠券！"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/emailaddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1000"
+                android:hint="xxx@xx.com"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="请输入E-mail地址" />
+
+            <Button
+                android:id="@+id/resultView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/myblack"
+                android:padding="3dp"
+                android:text="结果视图"
+                android:textColor="@color/orderlv" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/linetop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="※"
+            android:textColor="@color/myblack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一次性的优惠券，有效期为1周" />
+
+    </LinearLayout>
+</LinearLayout>

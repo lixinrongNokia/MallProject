@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/listID">
+
+        <item
+                android:id="@+id/download_layout"
+                android:title="分享"
+                android:icon="@drawable/download"/>
+        <item
+                android:id="@+id/service_layout"
+                android:title="在线机器人"
+                android:icon="@drawable/service"/>
+
+        <item
+                android:id="@+id/update_layout"
+                android:title="@string/checkUpdate"
+                android:icon="@drawable/update"/>
+        <item
+                android:id="@+id/clear_layout"
+                android:title="@string/cleanCache"
+                android:icon="@drawable/clear"/>
+    </group>
+    <group android:id="@+id/switchID">
+        <item
+                android:id="@+id/switchUI"
+                android:title="@string/switchGUI"/>
+    </group>
+    <group android:id="@+id/exitSystemID">
+
+        <item
+                android:id="@+id/logout_layout"
+                android:title="注销"/>
+    </group>
+
+</menu>

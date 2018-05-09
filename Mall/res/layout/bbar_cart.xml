@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:id="@+id/bbr_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#44000000"
+            android:visibility="gone">
+
+        <Button
+                android:id="@+id/Focus_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btnbg_otherpersonal_addfollow"/>
+
+        <Button
+                android:id="@+id/del_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/product_card_normal"
+                android:gravity="center"
+                android:text="移除商品"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/bbr_cartitem"
+            style="@style/bbar_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/bbr_item"
+            android:layout_toEndOf="@+id/bbr_item">
+
+        <TextView
+                android:id="@+id/bbar_card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/cart_sum_price"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:id="@+id/bbar_card_sumprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/bbar_card_title"
+                android:layout_toRightOf="@id/bbar_card_title"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+
+        <Button
+                android:id="@+id/bbar_card_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/product_card_normal"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/freightInfo"
+                android:layout_toStartOf="@id/bbar_card_btn"
+                android:layout_toLeftOf="@id/bbar_card_btn"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

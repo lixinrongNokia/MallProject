@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stateListAnimator="@drawable/item_raise"
+    app:cardBackgroundColor="#80cbc4"
+    app:cardCornerRadius="@dimen/share_radius"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    tools:targetApi="lollipop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/personhead"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_def" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/bubble_name_layout_margin_bottom"
+            android:layout_marginStart="@dimen/bubble_name_layout_margin_bottom"
+            android:layout_weight="1000"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="kdkdldll"
+                android:textColor="@color/defaultBlack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bubble_layout_margin_vertical"
+                android:ellipsize="end"
+                android:maxLength="20"
+                android:maxLines="2"
+                android:text="signature"
+                android:textColor="@color/defaultBlack" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/bubble_layout_margin_vertical"
+            android:layout_marginRight="@dimen/bubble_layout_margin_vertical"
+            android:text="kdkdldll"
+            android:textColor="@color/defaultBlack" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/max_bubble_width">
+
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/thumbup"
+                    android:layout_width="@dimen/praises_size"
+                    android:layout_height="@dimen/goddess_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ovo"
+                    android:drawableLeft="@drawable/fqy"
+                    android:drawableStart="@drawable/fqy"
+                    android:focusable="true"
+                    android:gravity="start|center"
+                    android:text="23"
+                    android:textColor="@color/defaultWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/sayhello"
+                    android:layout_width="@dimen/praises_size"
+                    android:layout_height="@dimen/goddess_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ovo"
+                    android:drawablePadding="8dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="打招呼"
+                    android:textColor="@color/defaultWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/reward"
+                    android:layout_width="@dimen/praises_size"
+                    android:layout_height="@dimen/goddess_height"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="start"
+                    android:background="@drawable/ovo"
+                    android:drawablePadding="8dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="打赏"
+                    android:textColor="@color/defaultWhite" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

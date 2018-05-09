@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false" android:tileMode="disabled"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="85" android:drawable="@drawable/ic_load_picture_01" />
+    <item android:duration="85" android:drawable="@drawable/ic_load_picture_02" />
+    <item android:duration="85" android:drawable="@drawable/ic_load_picture_03" />
+    <item android:duration="85" android:drawable="@drawable/ic_load_picture_04" />
+    <item android:duration="85" android:drawable="@drawable/ic_load_picture_05" />
+    <item android:duration="85" android:drawable="@drawable/ic_load_picture_06" />
+    <item android:duration="85" android:drawable="@drawable/ic_load_picture_07" />
+    <item android:duration="85" android:drawable="@drawable/ic_load_picture_08" />
+</animation-list>

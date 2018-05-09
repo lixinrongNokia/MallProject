@@ -1,0 +1,60 @@
+ul {
+	list-style-type: none;
+}
+
+ul,
+dl,
+dt,
+dd,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-top: 16px;
+}
+
+.button1 {
+	margin: 8px;
+	padding: 8px;
+	background-color: rgb(255, 0, 255);
+}
+
+.button2 {
+	margin: 8px;
+	padding: 8px;
+	background-color: rgb(255, 255, 0);
+}
+
+.button3 {
+	margin: 8px;
+	padding: 8px;
+	background-color: rgb(255, 255, 0);
+}
+
+@-webkit-keyframes twinkling {
+	/*透明度由0到1*/
+	0% {
+		opacity: 0;
+		/*透明度为0*/
+		color: rgb(255, 255, 0);
+	}
+	100% {
+		opacity: 1;
+		/*透明度为1*/
+		color: rgb(255, 0, 255);
+	}
+}
+
+#span {
+	-webkit-animation: twinkling 3s infinite ease-in-out;
+}
+
+table {
+	text-align: center;
+	border:1px solid #F00;
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing: 16px;
+}
